@@ -94,6 +94,13 @@ The site will be available at `http://localhost:5173`.
 | `postcss.config.js` | PostCSS config |
 | `package.json` | Dependencies and scripts |
 
+## Images
+
+| Directory | Usage |
+|-----------|-------|
+| `public/images/` | Static images — reference at `/images/photo.jpg` |
+| `src/assets/` | Imported images — `import img from '../assets/photo.jpg'` |
+
 ## Making Changes
 
 1. Edit `src/App.jsx` to update content
