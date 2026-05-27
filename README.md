@@ -4,25 +4,6 @@ A static React site deployed to GitHub Pages with a custom domain.
 
 ## Prerequisites (MacOS)
 
-### Install Homebrew
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Add to PATH (follow the printed instructions):
-
-```bash
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-Verify installation:
-
-```bash
-brew --version
-```
-
 ### Xcode Command Line Tools
 
 ```bash
@@ -31,9 +12,9 @@ xcode-select --install
 
 ### Node.js
 
-```bash
-brew install node
-```
+Download the installer from [nodejs.org](https://nodejs.org) (LTS version).
+
+Run the `.pkg` file and follow the prompts.
 
 Verify installation:
 
@@ -44,9 +25,9 @@ npm -v
 
 ### Git
 
-```bash
-brew install git
-```
+Download the installer from [git-scm.com](https://git-scm.com/download/mac).
+
+Run the `.pkg` file and follow the prompts.
 
 Verify installation:
 
