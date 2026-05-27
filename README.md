@@ -4,6 +4,25 @@ A static React site deployed to GitHub Pages with a custom domain.
 
 ## Prerequisites (MacOS)
 
+### Install Homebrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Add to PATH (follow the printed instructions):
+
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Verify installation:
+
+```bash
+brew --version
+```
+
 ### Xcode Command Line Tools
 
 ```bash
@@ -33,13 +52,6 @@ Verify installation:
 
 ```bash
 git --version
-```
-
-### GitHub CLI (optional)
-
-```bash
-brew install gh
-gh auth login
 ```
 
 ## Getting Started
