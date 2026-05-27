@@ -1,6 +1,6 @@
 # ZH Creative LLC
 
-A static React site deployed to GitHub Pages with a custom domain.
+A static React site deployed to GitHub Pages.
 
 ## Prerequisites (MacOS)
 
@@ -35,13 +35,35 @@ Verify installation:
 git --version
 ```
 
-## Getting Started
+## Initial Setup
 
-### Clone the repository
+### Create the GitHub repository
+
+1. Go to [github.com](https://github.com) and create a new repository
+2. Name it `ZachSite` (or any name you prefer)
+3. Leave it **public** or **private** — either works
+4. Do **not** initialize with README, `.gitignore`, or license
+5. Click **Create repository**
+
+### Clone and set up locally
 
 ```bash
-git clone https://github.com/KyleNewton10/ZachSite.git
+git clone https://github.com/<your-username>/ZachSite.git
 cd ZachSite
+```
+
+Copy all project files into this folder, then run:
+
+```bash
+npm install
+```
+
+### Connect to the remote
+
+```bash
+git remote add origin https://github.com/<your-username>/ZachSite.git
+git branch -M main
+git push -u origin main
 ```
 
 ### Install dependencies
@@ -94,17 +116,17 @@ npm run deploy
 
 This builds the site and pushes the `dist/` folder to the `gh-pages` branch. GitHub serves the site from that branch.
 
-## Custom Domain (GoDaddy)
+## Custom Domain
 
-### Add CNAME record
+### Add a CNAME record in your DNS provider
 
-1. Log in to [GoDaddy](https://godaddy.com)
-2. Go to **DNS** for `tidepool.tech`
+1. Log in to your DNS provider (e.g. GoDaddy, Cloudflare)
+2. Find the DNS management page for your domain
 3. Add a CNAME record:
 
 | Type | Name | Value | TTL |
 |------|------|-------|-----|
-| CNAME | test_inquery | kylenewton10.github.io | Default |
+| CNAME | `www` (or your subdomain) | `<your-username>.github.io` | Default |
 
 4. Save
 
@@ -114,7 +136,7 @@ This builds the site and pushes the `dist/` folder to the `gh-pages` branch. Git
 2. **Source**: Deploy from a branch
 3. **Branch**: `gh-pages`
 4. **Folder**: `/ (root)`
-5. **Custom domain**: `test_inquery.tidepool.tech`
+5. **Custom domain**: enter your domain (e.g. `www.example.com`)
 6. Click **Save**
 7. Check **Enforce HTTPS**
 
